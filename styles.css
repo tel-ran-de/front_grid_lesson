@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.grid-item {
+  padding: 50px;
+  background: rgb(172, 239, 239);
+}
