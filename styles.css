@@ -4,7 +4,65 @@
   padding: 0;
 }
 
+.grid-container {
+  display: grid;
+
+  /* grid-template-columns: 200px 1fr 2fr 250px 4fr;
+  grid-template-rows: repeat(3, 1fr); */
+
+  /* rows(ряды) / columns колонки  */
+  grid-template: repeat(4, 200px) / repeat(5, 200px);
+  /* для всех последующих строк высоту */
+  grid-auto-rows: 200px;
+  /* row-gap: 50px; column-gap: 25px; */
+  gap: 50px 25px;
+
+  /* center/end/start/space-between/space-around/space-evenly */
+  /* выравнивает сетку в родителе */
+  justify-content: center;
+
+  /* выравнивает детей внутри их контейнера */
+  /* justify-items: center;
+  align-items: center; */
+  /* align-items justify items */
+  /* горизонталь(вверх низ) вертикаль(лево/право)*/
+  /* place-items: center center; */
+}
+
+.number1 {
+  background: rgb(204, 238, 102);
+  /* row-start/column-start/row-end/column end */
+  grid-area: 1/1/4/4;
+}
+
+.number2 {
+  background: rgb(237, 137, 137);
+  /* grid-column-start/grid-column-end */
+}
+
+.number4 {
+  background: rgb(152, 137, 237);
+  grid-column: -3 / -1;
+}
+/* .article-section .images-container  */
+
+.grid-container {
+  grid-template-columns: (5, 1fr);
+}
+
 .grid-item {
-  padding: 50px;
   background: rgb(172, 239, 239);
+}
+.number1-2 {
+  grid-column: 2/6;
+}
+
+.number1-3 {
+  grid-column: 1/6;
+  background: rgb(134, 238, 102);
+}
+
+.number1-5 {
+  grid-column: 2/5;
+  background: rgb(238, 231, 102);
 }
