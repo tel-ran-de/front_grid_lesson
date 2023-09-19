@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+
+  /* grid-template-columns: 200px 1fr 2fr 250px 4fr;
+  grid-template-rows: repeat(3, 1fr); */
+
+  /* rows(ряды) / columns колонки  */
+  grid-template: repeat(4, 200px) / repeat(5, 200px);
+  /* для всех последующих строк высоту */
+  grid-auto-rows: 200px;
+  /* row-gap: 50px; column-gap: 25px; */
+  gap: 50px 25px;
+
+  /* center/end/start/space-between/space-around/space-evenly */
+  /* выравнивает сетку в родителе */
+  justify-content: center;
+
+  /* выравнивает детей внутри их контейнера */
+  /* justify-items: center;
+  align-items: center; */
+  /* align-items justify items */
+  /* горизонталь(вверх низ) вертикаль(лево/право)*/
+  /* place-items: center center; */
+}
