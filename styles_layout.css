@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-container {
+  padding: 0 16%;
+}
+.navigation-container ul {
+  gap: 100px;
+  display: flex;
+}
